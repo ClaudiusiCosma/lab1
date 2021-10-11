@@ -3,7 +3,9 @@ var video = document.getElementById("video");
 function on_cam_success(stream){
 video.srcObject = stream;
 }
-//-----------------------------------------------function on_cam_error(err)
+//-----------------------------------------------
+
+function on_cam_error(err)
 {
 alert("error."+err.message);
 }
